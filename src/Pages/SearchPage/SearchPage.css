@@ -1,0 +1,7 @@
+.search-page h1 {
+  color: var(--purple-dark);
+}
+.search-page .book-head {
+  border-bottom: 1px solid var(--purple-medium);
+  padding-bottom: 20px;
+}

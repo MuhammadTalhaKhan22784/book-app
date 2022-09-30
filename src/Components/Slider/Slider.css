@@ -1,0 +1,31 @@
+.slider {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  gap: 40px;
+  max-width: 1440px;
+  padding-inline: 40px;
+}
+.slider h1 {
+  font-size: 28px;
+  font-weight: 500;
+  color: #32324d;
+}
+
+.book-slider .splide__arrow {
+  opacity: 0 !important;
+  background-color: white !important;
+  height: 64px !important;
+  width: 64px !important;
+  transition: all 0.2s ease-in-out !important;
+}
+.book-slider:hover .splide__arrow {
+  opacity: 1 !important;
+}
+.book-slider li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

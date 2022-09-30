@@ -1,0 +1,23 @@
+.landing {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 94px;
+  max-width: 1440px;
+  margin-inline: auto;
+}
+.bg-purple {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  flex-direction: column;
+  background-color: var(--purple-light);
+  padding-block: 115px;
+  gap: 130px;
+}
+.wrapper {
+  width: 100%;
+}

@@ -1,0 +1,38 @@
+.story {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  max-width: 1051px;
+  text-align: center;
+  gap: 20px;
+  padding-inline: 20px;
+}
+.story h3 {
+  font-weight: 500;
+  font-size: 28px;
+  color: #678c50;
+}
+.story h2 {
+  color: #200c9f;
+  font-weight: 700;
+  font-size: 40px;
+}
+.story p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--text-color);
+}
+.story img {
+  margin-top: 40px;
+  max-width: 100%;
+  object-fit: contain;
+  width: 100%;
+}
+@media screen and (max-width: 1022px) {
+  .story {
+    margin-top: 100px;
+  }
+}

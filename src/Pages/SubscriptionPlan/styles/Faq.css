@@ -1,0 +1,22 @@
+.faq {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 30px;
+  width: 100%;
+  margin-top: 50px;
+}
+.faq h1 {
+  color: #32324d;
+  font-weight: 500;
+  font-size: 28px;
+}
+.faq-elements {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
+}

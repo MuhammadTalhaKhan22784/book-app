@@ -1,0 +1,110 @@
+.book-category {
+  width: 100%;
+  max-width: 1440px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 120px auto 120px auto;
+  padding-inline: 20px;
+}
+.book-cat-filter-box {
+  background-color: var(--purple-light);
+  padding: 40px 45px;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.book-cat-filter-box p {
+  color: var(--purple-medium);
+  border-radius: 2px;
+  color: var(--text-color);
+  background-color: transparent;
+  padding: 10px 16px;
+  font-weight: 500;
+  font-size: 16px;
+  cursor: pointer;
+  user-select: none;
+  transition: all 0.4s ease-in-out;
+}
+.book-cat-filter-box .active-cat {
+  color: white;
+  background-color: var(--purple-medium);
+}
+.book-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin: 40px 0px;
+}
+.book-head h1 {
+  color: #32324d;
+  font-weight: 500;
+  font-size: 28px;
+}
+.book-head select {
+  color: var(--gray);
+}
+.cards-grid {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  row-gap: 40px;
+  grid-auto-rows: 1fr;
+}
+.book-cat-filter-box .splide__arrow {
+  background-color: transparent !important;
+  opacity: 1 !important;
+}
+.book-cat-filter-box .splide__arrow svg {
+  fill: var(--text-color);
+}
+.book-cat-filter-box .splide__arrow--next {
+  right: -3% !important;
+}
+.book-cat-filter-box .splide__arrow--prev {
+  left: -3% !important;
+}
+
+@media screen and (max-width: 1300px) {
+  .cards-grid {
+    place-items: center;
+    grid-template-columns: repeat(5, 1fr);
+  }
+}
+@media screen and (max-width: 1114px) {
+  .cards-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+@media screen and (max-width: 896px) {
+  .cards-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media screen and (max-width: 682px) {
+  .cards-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .book-cat-filter-box .splide__arrow--next {
+    right: -11% !important;
+  }
+  .book-cat-filter-box .splide__arrow--prev {
+    left: -11% !important;
+  }
+}
+@media screen and (max-width: 490px) {
+  .cards-grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .book-cat-filter-box .splide__arrow--next {
+    right: -15% !important;
+  }
+  .book-cat-filter-box .splide__arrow--prev {
+    left: -15% !important;
+  }
+}

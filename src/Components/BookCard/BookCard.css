@@ -1,0 +1,39 @@
+.slide-box {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  max-width: 192px;
+  gap: 15px;
+  text-decoration: none;
+}
+.slide-box .flex {
+  justify-content: space-between;
+  width: 100%;
+}
+.slide-box .flex h3 {
+  font-weight: 400;
+  color: #252525;
+  font-size: 16px;
+}
+.slide-box .flex svg {
+  font-size: 20px;
+}
+.slide-box .flex:last-child {
+  justify-content: flex-start;
+}
+.slide-box .flex:last-child h4 {
+  font-weight: 400;
+  font-size: 16px;
+  color: #7c7c7c;
+}
+.slide-box .flex:last-child p {
+  font-weight: 400;
+  font-size: 16px;
+  color: #7c7c7c;
+  margin-left: 10px;
+}
+.slide-box .flex:last-child svg {
+  font-size: 16px;
+}

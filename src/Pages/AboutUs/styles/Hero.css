@@ -1,0 +1,47 @@
+.about-hero-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background-image: url("/public/Assets/about/hero.png"),
+    linear-gradient(to bottom, #4146bd, #4146bd);
+  height: calc(100vh - 94px);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center bottom;
+  padding-inline: 20px;
+  flex-direction: column;
+}
+.about-hero {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  max-width: 1117px;
+  gap: 50px;
+  color: white;
+}
+.about-hero h1 {
+  font-weight: 700;
+  font-size: 40px;
+}
+.about-hero p {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 26px;
+  max-width: 435px;
+}
+
+@media screen and (max-width: 500px) {
+  .about-hero-wrapper {
+    background-size: cover;
+    height: 100vh;
+  }
+  .about-hero {
+    align-items: center;
+    gap: 20px;
+    text-align: center;
+  }
+}

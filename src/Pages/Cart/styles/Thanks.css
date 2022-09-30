@@ -1,0 +1,19 @@
+.thanks {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+  margin-top: 50px;
+  text-align: center;
+}
+.thanks h2 {
+  color: #92c66a;
+  font-weight: 700;
+  font-size: 28px;
+}
+.thanks p {
+  color: var(--gray);
+  font-weight: 400;
+  font-size: 16px;
+}

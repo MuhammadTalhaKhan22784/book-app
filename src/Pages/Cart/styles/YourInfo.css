@@ -1,0 +1,149 @@
+.your-info {
+  max-width: 95%;
+  margin-top: 50px;
+  width: 100%;
+}
+.your-info .container-fluid > div {
+  width: 100%;
+}
+.your-info .container-fluid {
+  gap: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+
+  box-shadow: none !important;
+}
+.your-info .row > div {
+  padding-left: 0px;
+}
+.your-info .row {
+  margin-left: 4px;
+}
+.your-info .form-label,
+.your-info h3 {
+  color: var(--text-color);
+  font-weight: 500;
+  font-size: 14px;
+  margin-bottom: 10px;
+  padding-left: 0px;
+}
+.your-info h3 {
+  margin-bottom: calc(0.3rem + 10px) !important;
+}
+.your-info .form-select,
+.your-info .form-control,
+.your-info .form-control::placeholder {
+  color: #a7a7a7;
+  font-weight: 400;
+  font-size: 14px;
+}
+.your-info .form-select,
+.your-info .form-control {
+  height: 40px;
+}
+.your-info h2 {
+  font-weight: 500;
+  font-size: 18px;
+  color: #252525;
+  align-self: flex-start;
+  margin: 20px 0px !important;
+}
+.your-info .flex {
+  justify-content: space-between;
+  width: 100%;
+}
+.your-info .form-check-label {
+  font-weight: 400;
+  font-size: 14px;
+  color: var(--text-color);
+  margin: 0px !important;
+}
+.your-info .form-check {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.your-info .flex2 {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 30px;
+  margin-top: -20px;
+}
+.your-info h4 {
+  font-weight: 400;
+  font-size: 16px;
+  color: var(--gray);
+}
+.your-info p {
+  font-weight: 400;
+  font-size: 16px;
+  color: #252525;
+}
+.list-group-item {
+  padding: 0px 100px 0px 20px;
+  align-items: center;
+  display: flex;
+  height: 40px;
+}
+.small-item {
+  max-width: 458px;
+  margin-left: auto;
+}
+.small-item p {
+  font-weight: 600;
+}
+.btn-div-info {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 20px;
+  margin-top: 20px;
+  width: 100%;
+}
+.btn-div-info a {
+  opacity: 0.3;
+}
+.note {
+  font-weight: 400;
+  font-size: 16px;
+  width: 100%;
+  color: #252525;
+  border-top: 1px solid #e9e9e9;
+  padding-top: 10px;
+  margin-top: 10px;
+  line-height: 1.4;
+}
+.note span {
+  color: var(--purple-medium);
+}
+.your-info span {
+  color: #fb4a4a;
+  font-size: 14px;
+}
+@media screen and (max-width: 768px) {
+  .your-info {
+    max-width: 100%;
+  }
+  .your-info .row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    flex-direction: column;
+  }
+  .your-info .row .form-label {
+    margin-bottom: 0px !important;
+  }
+  .your-info h2 {
+    margin: 0px 0px !important;
+  }
+}
+@media screen and (max-width: 600px) {
+  .note {
+    font-size: 14px;
+  }
+}

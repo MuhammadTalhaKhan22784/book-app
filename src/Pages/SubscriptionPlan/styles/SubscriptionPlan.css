@@ -1,0 +1,17 @@
+.subscription {
+  margin: 140px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 1115px;
+}
+.device-cont {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--purple-light);
+  margin-top: 60px;
+  padding-inline: 20px;
+}

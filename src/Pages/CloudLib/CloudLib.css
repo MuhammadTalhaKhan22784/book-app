@@ -1,0 +1,153 @@
+.cloud-lib {
+  width: 100%;
+  max-width: 1180px;
+  margin: 120px auto;
+  padding-inline: 20px;
+}
+.cloud-lib .container-fluid {
+  display: grid;
+  grid-template-columns: 235px 1fr;
+  align-items: flex-start;
+  width: 100%;
+  column-gap: 65px;
+}
+.sidebar-lib {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 60px;
+  width: 100%;
+}
+.sidebar-lib h2 {
+  font-weight: 500;
+  font-size: 28px;
+  color: #32324d;
+}
+.side-items-div {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 10px;
+  width: 100%;
+}
+.side-items-div .side-item {
+  user-select: none;
+  border-radius: 8px;
+  cursor: pointer;
+  padding: 20px 15px;
+  color: #a7a7a7;
+  width: 100%;
+  transition: all 0.3s ease-in-out;
+}
+.side-items-div .active-side {
+  color: white;
+  background: #8c9eff;
+}
+.library-grid {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 20px;
+}
+.library-grid .form-select {
+  width: 224px;
+  height: 40px;
+  color: var(--gray);
+  font-weight: 400;
+  font-size: 14px;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+.lib-cards-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  width: 100%;
+  row-gap: 40px;
+  column-gap: 20px;
+}
+.sidebar-lib svg {
+  display: none;
+}
+.cloud-overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+@media screen and (max-width: 1222px) {
+  .lib-cards-grid {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+@media screen and (max-width: 982px) {
+  .lib-cards-grid {
+    grid-template-columns: 1fr 1fr;
+    place-items: center;
+  }
+}
+@media screen and (max-width: 772px) {
+  .lib-cards-grid {
+    grid-template-columns: 1fr;
+  }
+}
+@media screen and (max-width: 600px) {
+  .lib-cards-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+  .cloud-lib .container-fluid {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 1fr;
+    row-gap: 40px;
+  }
+  .side-items-div {
+    position: fixed;
+    left: -800px;
+    transition: all 0.5s ease-in-out;
+    width: 100%;
+    max-width: 400px;
+    z-index: 9;
+    top: 0;
+    height: 100vh;
+    padding: 90px 20px;
+    background-color: white;
+  }
+  .sidebar-lib {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row-reverse;
+  }
+  .sidebar-lib svg {
+    display: block;
+    color: black;
+    font-size: 25px;
+  }
+  .side-items-div svg {
+    position: absolute;
+    top: 2%;
+    right: 4%;
+  }
+  .active-side-menu {
+    left: 0;
+  }
+  .library-grid > div {
+    width: 100%;
+  }
+  .library-grid .form-select {
+    width: 100%;
+  }
+  .library-grid {
+    align-items: center;
+  }
+}
+@media screen and (max-width: 468px) {
+  .lib-cards-grid {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,0 +1,44 @@
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  width: 100%;
+  position: relative;
+  height: 374px;
+  padding-left: 120px;
+  isolation: isolate;
+  z-index: -1;
+  gap: 15px;
+}
+.hero img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: -1;
+}
+.hero h1 {
+  font-weight: 500;
+  font-size: 40px;
+  color: white;
+}
+.hero h1:last-of-type {
+  color: #c2d3ff;
+}
+@media screen and (max-width: 764px) {
+  .hero {
+    padding: 0px;
+    align-items: center;
+  }
+  .hero h1:last-of-type {
+    color: white;
+  }
+}
+@media screen and (max-width: 450px) {
+  .hero h1 {
+    font-size: 30px;
+  }
+}
